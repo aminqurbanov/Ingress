@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20231031-04
+      author: AminQurbanov
+      changes:
+        - dropColumn:
+            tableName: users
+            columnName: email

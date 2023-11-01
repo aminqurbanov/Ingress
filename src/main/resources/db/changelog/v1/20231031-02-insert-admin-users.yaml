@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20231031-02
+      author: AminQurbanov
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: name
+                  value: admin
+              - column:
+                  name: mail
+                  value: admin@gmail.com
+              - column:
+                  name: password
+                  value: admin1234

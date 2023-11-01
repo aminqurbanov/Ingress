@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20231031-01
+      author: AminQurbanov
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: students_pkey
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  name: mail
+                  type: VARCHAR(255)
+              - column:
+                  name: password
+                  type: VARCHAR(255)
